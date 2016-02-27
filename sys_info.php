@@ -11,8 +11,8 @@ try {
     /*** The SQL SELECT statement ***/
     $sth = $dbh->prepare("
        SELECT *
-       FROM `system_info` 
-       ORDER BY `dtg` DESC
+       FROM `measurements` 
+       ORDER BY `created_at` DESC
        LIMIT 0,1
     ");
     $sth->execute();
